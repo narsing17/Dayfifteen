@@ -38,9 +38,21 @@ public class HashTable {
 
     }
 
+    public static void paragraph() {
+
+
+        String paragraph = "Paranoids are paranoid because they are Paranoid but because they keep putting" +
+                " themselves deliberately into Paranoid avoidable situations";
+        String[] paragraphArray = paragraph.split(" ");
+        for (String str : paragraphArray) {
+            System.out.println(str + "----" + hashFunction(str));
+        }
+    }
+
     public static void main(String[] args) {
         HashTable.sentence();
-
+        System.out.println("");
+        HashTable.paragraph();
 
     }
 }
